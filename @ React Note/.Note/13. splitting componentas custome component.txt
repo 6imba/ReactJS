@@ -1,0 +1,37 @@
+- Good practise to have one modular_file per component. Which means you will end up with many component_files in react and thats normal.
+- here every seperate component is focused one one core task.
+- and you create your overall UI by combining these components.
+- because of this your UI code is more managebale.
+- and helps to make complex UI in easier way.
+
+- pass data through multiple component via props.
+
+- splitting or composition of component.
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+> my-app/src/components/card/myCard.css:
+    - .card{
+            background-color: coral;
+        }
+
+> my-app/src/components/card/myCard.js:
+    - import "./myCard.css"
+      export default function Card(props){
+          return <div className="card">{props.children}</div>
+      }
+
+> my-app/src/components/Component_6_Card.js:
+    - import Card from "./card/myCard.js";
+      export default function Component_6_Card(){
+          return (
+              <Card>
+                  <div>
+                      <p>Component_6_Card</p>
+                  </div>
+              </Card>
+          )
+      }
+
+# props.children, when you need to include html of child component inside parent component.
+

@@ -1,0 +1,14 @@
+# Create react app:
+    1. using react CDN
+    2. npm install react
+    3. npx create-react-app.#
+
+2. npm install react:
+    > npm install -g create-react-app
+    > create-react-app --version
+    > create-react-app <appName>
+
+ 3. npx create-react-app:
+    > npx create-react-app <app-name>
+    > npm start ===> start server
+

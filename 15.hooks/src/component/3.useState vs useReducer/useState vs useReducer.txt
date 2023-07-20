@@ -1,0 +1,8 @@
+- yata useState#1 ra useReducer#1 ma k difference xa vanda.
+- useState#1 handler function call garxa and handler function ko defination ma state variable change garxa.
+- useReducer#1 dispatchMethod call garxa and reducerFunction ko defination ma state variable change garxa.
+- useState#1 ma state variable change garda, we use setState method(passing direct new value inside setState method.)
+- useReducer#1 ma state variable change garda, we use reducerFunction(writing logic to create new vriable).
+
+- #2: useState hook use garda, handler fucntion hamile function component bahira define garyo vane tyo function ma stateVariable ra setState method chai as argument pathaunu perxa.  example #2
+- #2: useReducer hook use garda, reducer_fucntion hamile function component bahira jata define garda state argument default pass hunxa ra kunai pani set_method pass garnu perdaina.(action vanne auta optional argument  pass garda hunxa). example #2

@@ -1,0 +1,6 @@
+
+
+# class component properties:
+    - this.state
+    - this.timerID
+    - this.setState

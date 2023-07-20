@@ -1,0 +1,18 @@
+# Problem on older web-apps:
+    - sluggish: slow-moving or inactive
+    - non-responsive
+
+# Solution: React 18
+    - useTransition Hook
+    - useDeferredValue Hook
+
+// deferre means delay.
+
+- useDeferredValue hook state that the given value is gonna changes many time.
+- so, useDeferredValue waits until that given value is not busy(there no any change in the given value for some time).
+- then process all of those changes.
+
+- to implement deferred concept, pass the value thats gonna change most often into useDeferredValue hook. ==> useDeferredValue(value)
+- and place the return of that particular useDeferredValue in your component.
+
+- those value that changes most ofter instantly, are passed into useDebugValue hook, as it only changes thos value when they are free(not busy/changing)

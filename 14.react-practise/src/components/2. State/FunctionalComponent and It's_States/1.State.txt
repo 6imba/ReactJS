@@ -1,0 +1,40 @@
+# Component and it's state:
+    - What is state?
+    - Why to use state?
+    - How to define state?
+    - How to update state?
+    - How does state works?
+
+1. What is state?
+    - state is an object.
+    - state is an object that holds data of component.
+
+2. Why to use state?
+    - updating state will automatically re-render the component.
+
+3. How to define state?
+    - to maintain(define/update) the state of a component use hook called useState.
+    - destructure the state_object_identifer and method to update state from the array returned by useState hook.
+        > import {useState} from 'react';
+        > const [stateData, setData] = useState("initial value");
+    - useState hook:
+        - useState accepts an initial state
+        - returns two values:
+            - The current state.
+            - A function that updates the state
+
+4. How to update state?
+    > setData("new value");
+
+5. How does state works.
+    - use state when you want your component to get re-render when your data_value is changed.
+
+Q. Does the entire component Rerender when state changes?
+Q. Can we use state outside the component?
+Q. Is state of a component public or private?
+
+# Reference:
+    - https://www.youtube.com/watch?v=p7wZ_4sWZ4s
+
+- React components automatically re-render whenever there is a change in their state or props.
+

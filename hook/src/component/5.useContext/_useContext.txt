@@ -1,0 +1,11 @@
+- By default state of react_function_component is private/local.
+- So we need to pass state to nested component via props.
+- but we can maintain global state of all_function_component in react via useContext hook.
+- useContext hook solves the problem of "prop drilling" ==> pass the state as "props" through each nested component.
+
+# steps:
+    1.> create Context
+    2.> provide the created context. (context provider)
+    3.> consume the provide context. (context consumer)
+
+# 

@@ -1,0 +1,6 @@
+- In the case of a multi-page app, the entire web page content is refreshed, which is also true about all the pages requested by the user
+
+Q. Are single-page applications better?
+    - Single-page applications offer a much better user experience (UX), meaningthat users can navigate easily between the different pages of an app without waiting for the pages to load.
+
+Q. 

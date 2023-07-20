@@ -1,0 +1,72 @@
+.fontdetial-content-container{
+    padding: 30px 0;
+}
+.content-header{
+    margin: 0 45px;
+}
+.content-header h1{
+    font-size: 46px;
+    line-height: 1.4;
+    font-style: normal;
+    font-weight: 400;
+}
+.content-header p{
+    margin-bottom: 50px;
+    color: #999999;
+}
+.content-menu{
+    padding-top: 10px;
+}
+.content-menu ul{
+    padding-left: 45px;
+    border-bottom: 2px solid #E5E5E5;
+    display: flex;
+}
+.content-menu ul li{
+    margin-left: 20px;
+    padding-bottom: 10px;
+    list-style: none;
+}
+.active {
+    border-bottom: 3px solid #74bdb2;
+}
+.content-menu ul li a{
+    color: #979797;
+}
+.content-filter{
+    padding: 25px 40px;
+    display: flex;
+    border-bottom: 1px solid #E5E5E5;
+    justify-content: space-between;
+}
+.content-filter-desc{
+    padding-top: 13px;
+    font-weight: bold;
+}
+.content-filter-desc span{
+    color: #979797;
+    font-weight: normal;
+}
+.content-filter-slider{
+    padding: 5px 10px;
+    color: #979797;
+}
+.content-filter-searchbox{
+    padding: 5px 0 5px 10px;
+}
+.content-filter-searchbox input{
+    padding: 10px 15px;
+    border: 2px solid #E5E5E5;
+    border-radius: 5px;
+    width: 250px;
+    line-height: 1px;
+}
+.content-filter-searchbox input::placeholder{
+    color: #979797;
+    font-size: 15px;
+    font-weight: 400;
+}
+.content-filter-searchbox input:focus{
+    outline: 0;
+    border: 2px solid rgb(43, 159, 217);
+}

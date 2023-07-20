@@ -1,0 +1,45 @@
+# Ways to Style React components:
+
+    1. Inline Style:
+        - return (
+            <div>
+                <h1 style={{color: "red"}}>Hello Style!</h1>
+                <p>Add a little style!</p>
+            </div>
+        );
+
+    # Inline Style into single Section:
+        - return(
+            <section style={{attribute:value,attribute:value}}>
+                <div className="apple">
+                    html_script...
+                </div>
+            </section>
+        )
+
+    2. External plain css:
+        - src/Component_1.css
+        - src/Component_1.js:
+            > import "./Component_1.css"
+            > funtion Component_1(){
+                return(
+                    <div className="apple"></div>
+                )}
+
+# Html tag attributes vs react attribute:
+    > class ~ className
+
+# React-app general css structure:
+    - src/components?
+        - Component_1.css
+        - Component_1.js
+        - Component_2.css
+        - Component_2.js
+
+# Normally import does two things runs the imported file once and imports the exported objects.
+    - but in case of importing css file, it imports all the style of css-selector. 
+
+------------------------------------------------------------------------------------------------------------------------
+
+# Styleing a particular component should not effect the style of other component.
+- https://www.udemy.com/course/react-the-complete-guide-incl-redux/learn/lecture/25597250#announcements

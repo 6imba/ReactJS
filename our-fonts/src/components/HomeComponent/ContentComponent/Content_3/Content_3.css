@@ -1,0 +1,30 @@
+.content-item3{
+    flex: 0 0 220px
+}
+.feature-heading{
+    font-size: 14px;
+    font-weight: 600;
+    color: #777777;
+}
+.feature-font{
+    width: 220px;
+    height: 200px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.content-item3 #ff1{
+    background-image: url("./dinnext.png");
+    background-color: #cccccc;
+}
+.content-item3 #ff2{
+    background-image: url("./sailec.png");
+    background-color: #72bbbd;
+}
+.content-item3 #ff3{
+    background-image: url("./caldina.png");
+    background-color: #6eb7cd;
+}
+.content-item3 #ff4{
+    background-image: url("./ardenson.png");
+    background-color: #6cb5d9;
+}

@@ -1,0 +1,37 @@
+# React is a client-side component-based JavaScript library to built dynamically reactive user interface for websites/single_page_web_application.
+
+# What is ReactJs?
+    - Web app built in react is not SEO friendly.
+    - ReactJS is a JavaScript library to built UI for web app.
+    - ReactJS is a JavaScript library to built UI for single page web application.
+    - It is developed by facebook.
+
+# Why ReactJs?
+    - Traditionally web-client wants change in their cuurent web page they used to request whole new html page from the server which would take more time and bandwidth.
+    - But but JavaScript allow you to change particular html element or whole page with out requesting/hitting server.
+    - And here comes ReactJS(javascript library) which enables us to create dynamic web-UI in more easier way.
+    - So ReactJS gives you lots of features and tools which will help you building complex UI easier.
+
+# custome html element ~ react component
+    - React is all about those component.
+    - React is all about splitting your application into small building_blocks(components).
+    - where every component has thier own clear task.
+    - thereofre you codes stays more maintainable and manageable.
+    - And React library will do all heavy_lifting(rendering & combining of components under condition).
+    - declarative component focused approach.
+
+# WKT we can have JavaScript_code in html file inside <script> tag.
+# But all thanks to JSX in react, we can even have html_script inside js_file(like in some other template engine:hbs,ejs,pug), which normally is not possible.
+
+# Finally traditionally whole new html page was rendered from the server but because of reactJS to change a particular portion of a page within a browser which leads to smoother UI and better UX. 
+# With react-webapp, we only request for HTML page once from ther server, and we never again request for seconf HTML page. So its called single page appliction.(instead we will be manipulating that rendered single page for the time its runed on browser)
+
+- Thereofore React is a client-side component-based JavaScript library to built dynamically reactive user interface for websites/single_page_web_application.
+
+# Features of react:
+    - Its component based javascript UI library.
+    - It's mainly developed to focus in component thing.
+    - So it doesn't have other features built-in.
+    - But if you needs other features to work with react component, you have to install third-party library/package owning those other features(in module).
+    - like router for routing features, and so on.
+

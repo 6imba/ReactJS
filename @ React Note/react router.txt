@@ -1,0 +1,2 @@
+- react router routes to components without page reload.
+- 

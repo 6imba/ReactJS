@@ -1,0 +1,47 @@
+- hooks should always be called inside function component, not even inside nested function inside function component.
+
+- useState:
+    - use to create speacial state variable.(state variable makes component where it was registered re-render when its value/state changes.)
+    - takes a default value as first parameter.
+        > useState("this is my title")
+        > useState(title)
+        > useState({props.title})
+    - returns an array with two item:
+        > const [item1, item2] = useState({props.title}) 
+        > const [currentStateVariable1Identifier, changeVariable1StateMethod] = useState({props.title}) // here, we are using ES2015_array_destructuting technique.
+        > const [title, setTitle] = useState({props.title})
+        - item1: variable that holds the current state value.
+        - item2: method to change the state of that particular variable and makes the component re-render.
+            - callback inside item2~changeVariable1StateMethod, can have a default builting parameter called prevState which holds the previous_state_value.
+
+    - the new state value is setted into the module_file only when the component is re-rendered on the browser.
+
+    - Therefore useState hook registers some state(varaible as a state) for a particular component instance.
+        - particular component instance means, it register seperate_isolated state for (same component but called many time at different place).
+        - so every time a component is called it will have its own isolated state.
+        - One component -> invoked/called/used multiple times -> have its own isolated state.(isolated state of per component's instance basis)
+        - so when state changes in module/file/page, react only re-execute that particular instance of a component.
+        - re-dener means that whole function component is executed again.
+            - but when re-rendering, the useState makes state variable hold new latest value instead of initial given value.(as react keep track of useState value)
+        
+    - register state -> event gets trigger -> change state -> rerender the corresponding component.
+    - Therefore, state adds reactivity to our react-app.
+
+# Ways to update the state of a component:
+    - State can be updated in many ways!
+    - Thus far, we update our state upon user events (e.g. upon a click).
+    - That's very common but not required for state updates! You can update states for whatever reason you may have.
+    - Later in the course, we'll see Http requests that complete (where we then want to update the state based on the Http response we got back) but you could also be updating state because a timer (set with setTimeout()) expired for example.
+    - Ways to update the state of a component:
+        > when event gets trigger,
+        > at completion of HTTP requests
+        > after timer ends,setted with browser global method call setTimeout.
+
+# UserInput-Event-State:
+    - 
+
+# A component - call useState multiple time - Multiple State.
+    - mutiple state per component. > useState('')
+    - per state_object(mutilpe state variable as property) per component. > useState({})
+
+# 

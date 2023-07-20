@@ -1,0 +1,15 @@
+.menu{
+    display: flex;
+    background: #E3E2DE;
+}
+.menu li{
+    list-style: none;
+}
+.menu li a{
+    color: #777;
+    line-height: 51px;
+    margin: 0 18px;
+}
+.menu ul li:hover{
+    background-color: #d7d6d0;
+}

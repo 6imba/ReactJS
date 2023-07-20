@@ -1,0 +1,3 @@
+- Create UI reuseing component by passing dynamic data/content.
+- We dont have to hit server for every template-request.(so no page reload.)
+- Open sources and large community.

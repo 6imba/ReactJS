@@ -1,0 +1,26 @@
+- callback_program inside useEffect_hook gets executed only when rendering of component is completed for the first time later useState hook's program runs before re-rendering component and after updating state.
+- useEffect_hook re-render the component when given state changes.
+- state changed --> -re-execution of function component's statements --> execute useEffect hook's program --> re-render component JSX into browser.
+- useEffect implements the side-effect when given state changes.
+    > useEffect(()=>{},[var1,var2]) ===> implements the side-effect after state_variable var1 and var2 changes and before rendering JSX in browser.
+    > useEffect(()=>{},[]) ===> implements the side-effect when component is rendered for first time.
+    > useEffect(()=>{}) ===> implements the side-effect when everytime component renders or state changes.
+
+- useEffect(callback, dependencies)
+- clean up function
+
+- useEffect hooks lets you perform side-effect in function component.
+    - so what is side-effect: side-effect is the task need to be performed after function_component_is_re-rendered, state_change, props
+        - some side-effect can be:
+            - Data Fetching,
+            - changing DOM,
+            - etc
+
+- useEffect_callback, gets executed once render is committed to the screen.
+- use_Effect hook tells react_function_component to do something after component gets render on the screen.
+- use_Effect hook tells react_function_component to do something(callback) after component gets render on the screen.(page page can be render deu to many reason, via state change, props, etc)
+- simply, react will call the useEffect_callback after performing the DOM updation.
+
+- state mutate vayo vane component re-render hunxa, vane kun state change huda k side-effect lagaune vanne chai useEffect le determine garxa.
+
+#  React Hook "useEffect" cannot be called inside a callback. React Hooks must be called in a React function component or a custom React Hook function

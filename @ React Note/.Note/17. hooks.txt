@@ -1,0 +1,20 @@
+# React Hooks:
+    - useState
+    - useEffect
+    - useCallback
+    - useMemo
+    - useReduce
+
+- Hooks are the built-in funtion that can be used inside Function_Component.
+- Hooks are the new feature introduced in the React 16.8 version. It allows you to use state and other React features without writing a class.
+- Hooks are the built-in_functions which "hook into" React_state_and_lifecycle features from function components without writing class.
+
+    
+> useState:
+        - useState is a Hook(React_built-in_function) that allows you to have state variables in functional components.
+        - It return array of two element: current_state_value and method_to_change_state.
+        - useState hook allow us to maintain state_value in function component as we had in class component.
+        > const [state_varaible, setState] = useState(initial_value)
+
+> 
+

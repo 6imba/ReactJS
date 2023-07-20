@@ -1,0 +1,40 @@
+- Performance optimization and useCallback hook.
+
+- Default behaviour,
+    - all state in maintained in parent component and passed to child via props.
+    - and when child component mutate the state whole parent_component along with child_component gets re-render.
+
+- So, in order to re-render the only component whose dependencies(state passed as props from parent to child) mutates, we have React higher order memo() component
+- Performance optimization, by re-rendering only particular component whose dependencies(state) changes.
+- So, optimization solution is React.memo.
+
+- React.memo, is a Higher order component, that will prevent re-rendering functional component if its dependencies(props or state) do not change.
+    - as we passed state to nested component via props and we change state via pros.setMethod.
+    - https://dmitripavlutin.com/use-react-memo-wisely/
+
+- So how do you do that:
+    - wrapping a functional component with higher order component React.memo().
+    - which makes functional component re-render only if there is change in props or state of your component.
+
+# If two state value gets displayed via the same nested component then update one of them will re-render both of the component.
+
+- even that's a case in UseCallbackComponent_5, Button component get re-render.
+    - by we have change any dependencies(handler) of it.
+    - but that not the case here dependencies(handler) get changed/mutate in every render.
+    - every time component gets re-render function inside component is re-declared/re-created.
+    - so when dealing with function we always have to consider reference equality.
+    - even though two function have the same behaviour/defination, it doesn't mean they are same.
+    - So function before re-render and after re-render are not same.
+    - So as handler function is prop in nested component, our nested component re-render even after React.memo
+    - means React.memo doesnt prevent redender.
+    - So here comes the use of useCallback.
+
+
+
+
+# Usecase:
+    - component gets render everytime its state mutates.
+    - So a parent component have many state, and particular state is passsed to particular child_component via props.
+    - So updating a particular state in particular child_component re-render the whole parent compoent.
+    - which is not optimize way.
+    - So, we have React.memo, which re-render the component wrapped inside it only if its dependencies changes(state,props,etc)

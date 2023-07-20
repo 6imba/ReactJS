@@ -1,0 +1,50 @@
+
+- every time component gets re-render function inside component is re-declared/re-created.
+- so when dealing with function we always have to consider reference equality.
+- even though two function have the same behaviour/defination, it doesn't mean they are same.
+- So function before re-render and after re-render are not same.
+- So as handler function is prop in nested component, our nested component re-render even after React.memo
+- means React.memo doesnt prevent re-render.
+- So here comes the use of useCallback.
+- which doesn't change_reference of handler function on every render until it'd dependencies changes.
+
+- https://www.youtube.com/watch?v=IL82CzlaCys&list=PLC3y8-rFHvwisvxhZ135pogtX7_Oe3Q3A&index=26
+
+- useCallback is the hook that returns the memorized version of callback function. (memorized_callback can be call as function_reference)
+- memorized_callback changes only when any of its dependencies has changed.
+- useCallback hook will cache callback function.
+
+# Steps:
+    - import useCallback hook.
+    - create a cache function returned by useCallback function with dependencies.
+
+************************************************************************************************************************************************************************
+
+- The React useCallback Hook returns a memoized callback function.
+- Think of memoization as caching a value so that it does not need to be recalculated.
+- This allows us to isolate resource intensive functions so that they will not automatically run on every render.
+- The useCallback Hook only runs when one of its dependencies update.
+- This can improve performance.
+
+- Solve the Problem:
+- Reason to use React.memo() is to prevent a component from re-rendering unless its dependencies(state,props) changes.
+- Reason to use useCallback is to prevent re-declaring of function on every render unless it's dependencies mutates.
+
+************************************************************************************************************************************************************************
+Q. why not use useCallback hook every time?
+Q. when to use useCallback hook?
+
+
+
+# Usecase:
+    - component gets render everytime its state mutates.
+    - So a parent component have many state, and particular state is passsed to particular child_component via props.
+    - So updating a particular state in particular child_component re-render the whole parent compoent.
+    - which is not optimize way.
+    - So, we have React.memo, which re-render the component wrapped inside it only if its dependencies changes(state,props,etc)
+    - but React.memo will re-render component if component is passed with function as a props.(as function is re-declared/create on every render.)
+    - because which react behave as its function_props is mutated and re-render again.
+    - So inorder to prevent component re-declare/re-create function_props on every render we use useCallback props.
+    > on-render, data(number,string,boolean) is not re-declare/created but (function,array,object) is re-declared/created.
+    > Therefore use useCallback incase u don't want re-declare/creatation of function.
+

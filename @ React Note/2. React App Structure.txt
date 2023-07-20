@@ -1,0 +1,129 @@
+# index.html is the starting root template.
+    - which will be changed with requested component with dynamic content.
+
+# index.js:
+    - index.js is the entry point for React Application.
+    - that renders the component to the root template element.
+    - const root = ReactDOM.createRoot(document.getElementById('root')); ==> select/defines the root element of the react app template.
+    - root.render( <React.StrictMode> <App /> </React.StrictMode> ); ==> renders the component(<App/>) to the root element of root template.
+    - <React.StrictMode> <Components/> </React.StrictMode> ==> JSX.
+    - Component is how we break our website page into different small individual isolated piece of code.
+
+# JSX:
+    - <React.StrictMode>
+        <div className="App">
+            <p>Hello world.</p>
+        </div>
+      </React.StrictMode>
+
+    - var name = "amir";
+      root.render(
+        <React.StrictMode>
+            <div className="App">          
+                <p>Hello {name} </p>
+            </div>
+        </React.StrictMode>
+      );
+
+    - function App(){
+        var name = "Amir"
+        retutn(
+            <div className="App">          
+                <p>Hello {name} </p>
+            </div>
+        )
+    }
+
+    - function App(props){
+        var name = "Amir"
+        retutn(
+            <div className="App">          
+                <p>Hello {name} </p>
+                <p>Greeting from {props.company} </p>
+            </div>
+        )
+    }
+
+    - HTML attributes vs JSX attributes(camelCase):
+        > class ~ className
+        > for ~ HTMLfor
+
+    - In JSX, JS expression should be inside curly braces in react {}.
+        - const element = { true ? "ok" : "not okay" }
+        - const element = <h1>Hello, {name}</h1>;
+        - const age = {2+20};
+        - const userName = {user.name};
+        - <button onClick={display}>
+
+    - Every tag in JSX must have closing tag or be self closeing tag. (<p></p>, <input/>)
+
+    - Every element in JSX should be wrapped inside a parent tag(i.e: <div></div>), if no parent tag then atleast <></> empty opening and closing tag.
+
+    - We split JSX over multiple lines for readability. While it isn’t required, when doing this, we also recommend wrapping it in parentheses to avoid the pitfalls of automatic semicolon insertion.
+
+# Render element
+# Render component
+
+# Componet:
+    - import & export (default|named)
+    - props
+    - State
+    - 
+
+# porps: props is an JavScript object that we pass from parent component to child component.
+    - 1. function component:
+        function App(){
+            return(
+                <>
+                    <NavBar name="ToDoApp"/>
+                </>
+            )
+        }
+        function NavBar(props){
+            return(
+                <nav>
+                    <p>{props.name}</p>
+                    <a>Home</a>
+                    <a>Contact</a>
+                </nav>
+            )
+        }
+
+    - 2. function component object destructuting:
+        function App(){
+            return(
+                <>
+                    <NavBar name="ToDoApp"/>
+                </>
+            )
+        }
+        function NavBar({name}){
+            return(
+                <nav>
+                    <p>{name}</p>
+                    <a>Home</a>
+                    <a>Contact</a>
+                </nav>
+            )
+        }
+
+    - Default props and types.
+    - Props are Read-Only.
+    - Pure Component: Never modify its own props.
+    - Pure Component: Changes its own props.
+    - All React components must act like pure functions with respect to their props.
+    -
+
+# state & useStateHook: 
+    - useStateHook in react will re-render the component whose variable state has been changed.
+        > const [age, setAge] = useState("Amir");
+        - useState is hook that defines the state(value) of variable of a component.
+        - setAge is a function that used to update the variable's state/value.
+        - every time our variable's state/value is updated, our respective component re-render.
+        - useState over-write/mutate the state/value.
+        > const [variableName, functionToUpdateVariableState] = useState(initialVariableState);// here state means value
+
+# Hook:
+    - 
+
+# 

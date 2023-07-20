@@ -1,0 +1,47 @@
+#  SingleWebPage(index.html) > Main_Component(App.js) -> Nested_Component(js_file with js_function).
+
+- We use html,css and js for making Web UI.
+- component: reusable block of UI code with changeable/dynamic data.
+
+- React web page UI(index.html) ==> combination of react components.
+- React component(.js files) ==> compose of html(for stucture), css(for styling) and js(for logical part).
+
+- Web page = One main component with other nested component inside it.
+
+- React compose many component to create a web page UI.
+
+Q. Why components concept?
+    - reusability: dont repeat yourself
+    - separation of concerns: distinguish code in smaller and managable piece.
+    - reactive
+
+# You can say with react we built our own costome html element as component.
+
+# Good practise to have one modular_file per component. Which means you will end up with many component_files in react and thats normal.
+
+# App.js will be our root component and it will have other child/nested component, which leads to component tree in react.
+# and its good practise to keep all the other child component inside src/components directory.
+# When our react app gets loaded in browser for thr first time, our App.js component is what gets render into our index.html page.
+
+# PascalCase or SNAKE_CASE the component name.
+
+# Component in react is a just a JavaScript function with Capitalcase function name which returns html script.
+# When you import react component use Capitalize name as react looks for custome html element in capitalized form.
+
+# JSX rule when you return HTML from component function:
+    - all the html element must be inside a root parent node element.
+        - This is because component function can only return one element.
+            > i.e 
+                return <div><h1>hi1</h1><h1>hi2</h1></div>
+                return <NavBar/>
+
+    # () in component return, will span the multiline code.
+
+# React component module file:
+    > import css
+    > Js component funtion(){
+        > some js logical statements...
+        > renturn(
+            JSX
+        )
+    }

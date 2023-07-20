@@ -1,0 +1,10 @@
+> useRef: access HTML element as ref.
+    - HTML element can have ref attribute with useRef hook.
+> useRef + React.forward: access React_component as ref.
+    - React_Compoent can have ref attribute with useRef along React.forward.
+# Here, useRef hook sets ref value to hold the HtmlElement or CustomeComponent. But useImperativeHandle is used to set ref custome value.
+> useImperativeHanlde: create custome ref value entirely, without relating to component.
+    i.e {current: custome_value}
+
+# useImperativeHandle is used to set custome ref value.
+# useImperativeHandle is used to ref child component element.

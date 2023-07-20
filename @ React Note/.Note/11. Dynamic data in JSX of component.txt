@@ -1,0 +1,55 @@
+# Dynamic data and Expression in JSX of component.
+    - placeholder: 
+    
+# This is what powers react app to reuse same component but with dynamic data.
+
+# Example_1: In component1.js;
+function Component_1(){
+    const myDate = new Date(2022, 6, 16);// custume hard_coded_data
+    const name = "Amir Shrestha";
+    ...may be later fetech data from db via http request,
+    return(
+        <div>
+            <h1>{placeholder}</h1>
+            <h1>{1+1}</h1> //js_expression
+            <h1>{Math.random()}</h1> //js_expression
+            <h1>{myDate.toISOString()}</h1>
+            <h1>{name}</h1>
+        </div>
+    )
+}
+# Note: In example_1 we have not passed any dynamic data, instaed we just passws/invoked the hard coded data in JSX.
+
+Q. What should we do to make our placeholder_data in JSX dynamic?
+    - instead of hard coding data in component function, we can pass data via props argument.
+    - or you can say that you can make the component function accepts parameters via props.
+
+# Example_2:
+
+In App.js;
+    import Component_1 from "./components/Component_1"
+    function App(){
+        const myDate = new Date(2022, 6, 16);// custume hard_coded_data
+        const name = "Amir Shrestha";
+        return(
+            <div>
+                <Component_1 var1={myDate} var2={name}/>
+            </div>
+        )
+    }
+
+In Component_1.js;
+default export function Component_1(props){
+    return(
+        <div>
+            <h1>{props.var1}</h1>
+            <h1>{props.var2}</h1>
+        </div>
+    )
+}
+
+
+
+
+
+# 38 to be contineu:

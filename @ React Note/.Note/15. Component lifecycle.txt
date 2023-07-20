@@ -1,0 +1,47 @@
+- We are born, grow, and then die. Almost everything follows this cycle in its life, and React components do as well. Components are created (mounted on the DOM), grow by updating, and then die (unmount on DOM). This is referred to as a component lifecycle.
+- Lifecycle of Components: Each component in React has a lifecycle which you can monitor and manipulate during its phases.
+
+
+
+- Components Lifecycle phases:
+    1. Initializing: This is the phase in which the component is initialized by setting up the state and the props.
+    2. Mounting: Mounting is the phase in which our React component mounts(created and inserted) on the DOM.
+    3. Updating: This is where component’s data(state & props) changes in response to user events and hence, re-rendering takes place.
+    4. Unmounting: This is the last phase where the component gets unmounted from the DOM.
+
+
+
+- Components Lifecycle phases and methods:
+    1. Initializing: constructor()
+    2. Mounting: getDerivedStateFromProps(), componentWillMount(), render(), componentDidMount()
+    3. Updating: getDerivedStateFromProps(), shouldComponentUpdate(), render(), getSnapshotBeforeUpdate(), componentDidUpdate()
+    4. Unmounting: componentWillUnmount()
+    5. Error handling lifecycle methods
+
+    - React automatically calls the responsible method according to the phase in which the component is. 
+    - These methods give us better control over our component and we can manipulate them using these methods.
+
+
+
+- React Component each phase and each method:
+    1. Initializing:
+        1.1. constructor():
+    2. Mounting: 
+        2.1. getDerivedStateFromProps(),
+        2.2 componentWillMount(),
+        2.3. render(),
+        2.4. componentDidMount()
+    3. Updating:
+        3.1. getDerivedStateFromProps(),
+        3.2. shouldComponentUpdate(),
+        3.3. render(),
+        3.4. getSnapshotBeforeUpdate(),
+        3.5. componentDidUpdate()
+    4. Unmounting:
+        4.1. componentWillUnmount()
+
+
+
+- Reference:
+    - https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+    - https://www.freecodecamp.org/news/how-to-understand-a-components-lifecycle-methods-in-reactjs-e1a609840630/

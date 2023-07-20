@@ -1,0 +1,27 @@
+.bestFontContainer{
+    /* background-color: rgb(51, 0, 99); */
+    display: flex;
+    flex-wrap: wrap;
+}
+.bestFontItem{
+    /* background-color: rgb(100, 214, 255); */
+    list-style: none;
+    flex: 1;
+}
+.bestFontItem-logo{
+    /* background-color: rgb(255, 34, 0); */
+    height: 130px;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .bestFontItem-img{
+    background-color: rgb(234, 112, 189);
+    outline: 2px solid black;
+    outline-offset: -1px;;
+} */
+
+.bestFontItem-link:hover{
+    background: #6CB5D9;
+}

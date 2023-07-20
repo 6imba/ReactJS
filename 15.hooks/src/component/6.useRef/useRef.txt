@@ -1,0 +1,15 @@
+- useRef hook return the object with one property called current.
+    > obj1 = useRef(0)
+    > obj1  = {current:0}
+
+- Finally,
+    - therefore useRef Hook allows you to persist values between renders. #1
+    - It can be used to store a mutable value that does not cause a re-render when updated. #1
+    - It can be used to access a DOM element directly. ****** #2
+    - The useRef Hook can also be used to keep track of previous state values. ****** #3
+    - useRef() only returns one item. It returns an Object with current property. // {current: 0}
+
+- Step of implementaion:
+    1. initialization: useRef we set the initial value: useRef(0).
+        - It's like doing this: const object1 = {current: 0}. We can access the current property by using count.current.
+    2. mutation: renderCounter.current += 1; 

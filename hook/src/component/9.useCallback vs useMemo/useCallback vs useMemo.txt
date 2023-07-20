@@ -1,0 +1,45 @@
+# Similarity:
+    - Both hooks accepts a callback_function and a list of dependencies,
+
+# Difference:
+    - useMemo returns the memorized value returned by the passed function.It only recalculates the value when one of the dependencies changes.
+    - useCallback returns the memorized version of the callback. It only changes the callback when one of its dependencies is changed.
+
+    - useMemo only recalculates the value when one of the dependencies changes.
+    - useCallback only changes the callback when one of its dependencies is changed.
+
+
+# Code:
+    > const doubleNumb1 = useMemo(() => input*2, [input])
+    > console.log(doubleNumb1) 
+    //Output: 2
+    // useMemo return value calculated by callback
+
+    > const doubleNumb2 = useCallback(() => input*2, [input])
+    > console.log(doubleNumb2) 
+    //Output: () => input * 2
+    // useMemo callback function_defination/reference.
+
+************************************************************************************************************************
+
+- useMemo returns the memorized value, returned by the passed callback function.
+- useMemo returns undefined incase callback has no return.
+- useMemo only recalculates the value when one of the dependencies changes.
+- Generally, useMemo only execute passed_callback_function when of the dependencies changes.
+- Think of memoization as caching a value so that it does not need to be recalculated.
+- This will cause the function to only run when needed.
+
+- useCallback returns the memorized version of the callback.
+- useCallback re-create/define memorized version of the callback when one of the dependencies changes.
+- Generally, useCallback only re-create/define passed_callback_function when of the dependencies changes.
+
+- And here React.memo(), re-render the component wrapped inside it only when its dependencies(state,props,children) of that wrapped_inner_component changes. (children is also props)
+
+- The useMemo and useCallback Hooks are similar. The main difference is that useMemo returns a memoized value and useCallback returns a memoized function.
+
+
+
+
+# Summary:
+    # useCallback: Returns a memoized callback.
+    # useMemo: Execute the callback and Returns (memoized_value if have return type | undefine if no return).

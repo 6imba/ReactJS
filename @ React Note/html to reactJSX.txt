@@ -1,0 +1,4 @@
+- for becomes htmlFor
+- class becomes className (className replace ~ class beacause it create confict at the time js class keyword is introduced.)
+- background-color ~ backgroundColor
+- 

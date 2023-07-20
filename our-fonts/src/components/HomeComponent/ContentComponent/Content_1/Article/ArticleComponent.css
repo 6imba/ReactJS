@@ -1,0 +1,24 @@
+.mono-article{
+    margin-bottom: 60px;
+}
+.mono-article header h1{
+    color: #6CB5D9;
+    font-weight: 800px;
+}
+.mono-article p{
+    color: #777777;
+    line-height: 24px;
+}
+.mono-article header p{
+    font-style: italic;
+    color: #777777;
+}
+.mono-article p img{
+    width: 120px;
+    margin-right: 10px;
+    float: left;
+}
+.mono-article p a:hover{
+    background: #6CB5D9;
+    color: white;
+}

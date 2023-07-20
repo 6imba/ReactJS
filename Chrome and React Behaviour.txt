@@ -1,0 +1,53 @@
+1. In index.js:
+    root.render(
+        <React.StrictMode>
+            <App />
+        </React.StrictMode>
+    );
+    -> <React.StrictMode> makes page render twice.
+        - remove it then your render will happen just once.
+            root.render(
+                <App />
+            );
+    -> <React.StrictMode> makes console and screen render only after all alter is done.
+
+    # Test:  
+        const UseRefComponent = () => {
+
+            alert("Hi ...")
+            console.log("Hi ...")
+
+            const [inputValue, setInputValue] = useState(0);
+        
+            useEffect(() => {
+                alert("Side-effect after rendering")
+                console.log("Side-effect after rendering")
+            });
+        
+            alert("Bye ...")
+            console.log("Bye ...")
+
+            return (
+            <>
+                <input type="text" value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
+                <h1>Input Value: {inputValue}</h1>
+            </>
+            );
+        }
+    
+2. onChnage event in input field, new typed keyborad value gets render into screen only after alert of useEffect is done.
+
+    const UseRefComponent = () => {
+        const [inputValue, setInputValue] = useState(0);
+        useEffect(() => {
+            alert("Side-effect after rendering")
+        });
+  
+        return (
+            <>
+                <input type="text" value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
+                <h1>Input Value: {inputValue}</h1>
+                <h1>Render Counter: {renderCounter.current}</h1>
+            </>
+        );
+    }

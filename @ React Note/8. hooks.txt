@@ -1,0 +1,9 @@
+# React Hooks:
+    - useState
+    - useEffect
+    - useCallback
+    - useMemo
+    - useReduce
+
+# Hooks are the built-in funtion that can be used inside Function_Component.
+# 

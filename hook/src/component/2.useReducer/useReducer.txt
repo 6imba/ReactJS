@@ -1,0 +1,6 @@
+- syntax: const [state, dispatch] = useReducer(reducer, initialState);
+- const [stateVariable, dispatchMethod] = useReducer(reducerFunction, initialValue);
+- useReducer instead of useState, incase we need to access stateVariable and SetStateMethod outside component, like in e.g:7
+
+- you see useReduce make it easy to write logic on state variable.
+- as we don't have to pass stateVariable and stateMethod every time, as we needed to do while using useState.

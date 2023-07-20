@@ -1,0 +1,21 @@
+Some components don’t know their children ahead of time. 
+- ChildComponent2 has placeholder for child_elements/components which is passed by ParentComponent1.
+
+
+// # Component composition:
+// SignUpDialog() {
+//   <Dialog >
+//       jsx1
+//   </Dialog>
+// }
+
+// Dialog(props) {
+//   <FancyBorder color="blue">
+//     jsx2
+//     {props.children}#jsx1
+//   </FancyBorder>
+// }
+
+// FancyBorder(props) {
+//   {props.children}#jsx2
+// }

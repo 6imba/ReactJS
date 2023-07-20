@@ -1,0 +1,26 @@
+# let and const is the two different way for creating a variables.
+    - let for creating a variables values and const for creating constant value.
+
+# arrow function: const func1=(params)=>{return value}; //this and arrow function
+
+# export & import Modules.
+    - defualt export, named export,
+        - when your module only one variable to be exported use default export but if your module needs to export multiple variable use named export.
+    - import default, import {named}.
+        - when you need to import default exported vairable use what ever identifier_name but when you export named exported variable use same_exported_identifier inside curly braces{}.
+    - import alias: as
+    - import bundled: *
+
+# Classes: class(no_constructor,properties,arrow_methods) and object, inheritance, 
+
+# ... operation: name of of this ... operator depends on where we use it(Spread / RSET Operator).
+
+# Destructuring.
+
+# Primitive Type and Reference Type.
+    === operator compares value datatype of two primitive type operands. (number,string,booleans)
+    === operator compares refertence datatype of two reference type operands.(object,array)
+
+# Array iteration methods: forEach, map, filter, reduce, from.
+
+# JS generation and browser support.

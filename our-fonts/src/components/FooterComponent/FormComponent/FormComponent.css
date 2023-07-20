@@ -1,0 +1,25 @@
+.footer-form{
+    background: #E3E2DE;
+    padding: 10px;
+    /* align-items: center; */
+    text-align: center;
+}
+.email-field{
+    border: 2px solid rgba(0,0,0,.2);
+    border-radius: 5px;
+    padding: 8px 10px;
+}
+.sign-up-btn{
+    border: 2px solid #6cb5d9;
+    border-radius: 20px;
+    color: #6cb5d9;
+    font-size: 15px;
+    line-height: 36px;
+    font-weight: bold;
+    margin: 0 5px;
+    padding: 0 30px;
+}
+.sign-up-btn:hover{
+    background-color: #6cb5d9;
+    color: white;
+}

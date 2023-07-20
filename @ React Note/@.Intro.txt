@@ -1,0 +1,204 @@
+- In today's time React is the number ones library to make Single_Page_Application maintained by facebook.
+- Single_Page_Application is the application where UI of webapp gets loads only one time. UI changes only by switching the components by javascript.
+- Simply navigates from one page to another page without reloading the page.
+- ReactJS is base on components.
+- We create a component and can use it more than one time in same web site or other website.
+- Principle of React: Write once, use everywhere.
+- Component base approach.
+- React is really light weight as it doesnt have pre-defined-structure.
+- So, as your project grows you can install existing libraries like, axios for http, router from react-router-dom, so on.
+- Therefore, React is the JavaScript library for building UI(UserInterfaces).
+- React is library not framework.
+- React, ReactJS, React.JS
+- React create UI.
+
+
+
+- Single Page Application
+- React library
+- External Libraries
+- Components
+- Hooks
+
+
+# Environment Setup:
+    - Download and Install Node(JS runtime environment).
+    - npm gets dowanloaded&installed at the time when we install node.
+    - Download and Install VS Code(IDE).
+    - VS Code extension:
+        - Thunder Client (alternative of postman for VS Code for HTTP_API testing).
+        - ES7 React/Redux/GraphQL/React-Native snippets (emitor for ReactJS).
+        - Babel JavaScript (emitor for ES6)
+        - Bracket Pair Colorizer
+        - Auto Rename Tag
+        - LiveServer
+        - Prettier Code Formatter
+        - vscode-icon
+    - Chrome React Dev Tools extension builted by facebook.
+
+
+
+# React:
+    - Component base Architecture,
+    - Declarative base approach,
+    - DOM update&manipualtion,
+    - Reusable Code(Principle: Write once, use everywhere),
+    - Speed up application's simplicity and scalebility,
+    - huge community in github.
+
+
+
+# Pre-requirities: HTML, CSS, JS, ES6, node, npm, so on.
+
+
+
+# Components:
+    - Class base component
+    - Function base component
+    - props
+    - state
+    eg: NavbarComponent, SidebarComponent, BodyComponent, FormComponent, FooterComponent, so on.
+
+
+
+# Create react project:
+    - npm install -g create-react-app
+    - npm install create-react-app
+    - create-react-app -version
+    - create-react-app <app-name> ----> creates initial basic react app structure
+        or
+    - npx create-react-app <app-name> ----> creates initial basic react app structure
+    - npx create-react-app .
+    - npm start
+
+# 
+
+------------------------------------------------------------------------------------------------------------------------------
+
+- JavScript
+- Node
+- npm
+- npx
+- express
+- react
+
+- Button clicked ~ Page reload ~ MultiPageApplication
+- Button clicked ~ Page doesnot reload ~ SinglePageApplication ==> React
+
+- So way to create react app.
+    1. from scratch
+    2. npx create-react-app appName ==> "https://reactjs.org/docs/create-a-new-react-app.html"
+    Q. which is the easist way?
+
+- src/index.js ==> entry point
+- App.js ==> main first component
+    
+
+- Two ways to create component in react:
+    - function base component
+    - class base component
+
+
+- VS code extension: ES7 React/Redux/GraphQL/React-Native snippets
+    - rfc
+    - rafc
+
+- props in Component is JavScript_object that we pass from our parent component to child component.
+- App.js is our parent component
+    - <HeaderComponent title="My To Do Lists"/>
+    - export default function header({title}) {
+         <p>{title}</p>
+      }
+        OR
+    - export default function header(props) {
+         <p>{props.title}</p>
+      }
+- <HeaderComponent title="My To Do Lists" searchBar={false}/>
+- { props.searchBar? "We have SearchBar" : "We dont have SearchBar"}
+- Parsing error: JSX value should be either an expression or a quoted JSX text.
+- default props and props type.
+    - PropsType
+    - default props
+    - header1.defaultProps = {
+            location: "Your Location!", //see in console.
+            title: "Title Here",
+            searchBar: true
+        }
+        header1.propTypes = {
+            stringValue: PropTypes.string, //see in console.
+            title: PropTypes.string,
+            searchBar: PropTypes.bool
+        }
+    - {arr.map()}
+    - map & key in each child component( when we render anything in frontend via araay each elements needs unique key)
+
+    - use state hook
+    - hooks in react
+    
+    
+    - styleing:
+        const Footer = () => {
+        let footerStyle = {
+            position: "absolute",
+            top: "100vh",
+            width: "100%"
+        }
+        return (
+            <footer class="bg-dark text-light py-3" style={footerStyle}>
+            <p className='text-center'>
+                Copyright &copy; MyToDosList.com
+            </p>
+            </footer>
+        )
+        }
+
+    - There are lots modules in React that helps to write css in a component.
+
+    - <input type="password" class="form-control mb-2" id="exampleInputPassword1" placeholder="Task" value={taskText}/>
+    - const [taskText, setTitle] = useState("");
+    - input field not typed.
+    - <input type="text" class="form-control mb-2" id="exampleInputPassword1" placeholder="Task" value={taskText} onChange={(e)=>{setTitle(e.target.value)}}/>
+    - useState in ReactJS.
+
+    - events: onclick, onchange,
+    - onchange ==> The onchange event occurs when the value of an element has been changed.
+        - Syntax:
+            - In HTML:
+                - <element onchange="myScript">
+            - In JavaScript:
+                - object.onchange = function(){myScript};
+            - In JavaScript, using the addEventListener() method:
+                - object.addEventListener("change", myScript);
+        - Example:
+            - <input type="text" value="" onchange="myFunction()"> ==> Execute a JavaScript when a user changes the content of an input field:
+            - <select id="mySelect" onchange="myFunction()">
+                <option value="Audi">Audi</option>
+              </select>
+        - For <button>, <input> and <option> elements, the value attribute specifies the initial value of the element.
+        - onchange event is similar to the oninput event. The difference is that the oninput event occurs immediately after the value of an element has changed, while onchange occurs when the element loses focus. The other difference is that the onchange event also works on <select> elements.
+
+    - setTasks([...tasks, newTask])
+
+    - local storage
+
+    - react router ==> npm install react-router-dom
+    
+    - Each child in a list should have a unique "key" prop.
+    - react hooks
+    - order of hooks sequence
+    - function component and hooks.
+    - react useState hook
+    - dynamic content & hook
+    - dynamic content & hook
+
+
+
+    alert(document.getElementById("minus").innerText)
+    alert(document.getElementById("minus").innerHTML)
+    alert(document.getElementById("minus").innerContent)
+
+    <button id="myBtn"><i><u>Try it</u></i><span><b>Hohoho</b></span>
+    alert(document.getElementById("myBtn").innerHTML)
+    alert(document.getElementById("myBtn").innerText)
+
+    - variable hold imported component must be Uppercase.

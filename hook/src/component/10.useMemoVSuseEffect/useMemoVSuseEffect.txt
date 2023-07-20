@@ -1,0 +1,9 @@
+# useMemo() executes callback before rendering JSX, if given dependencies mutates.
+# useEffect() executes callback after rendering JSX, if given dependencies mutates.
+
+# Dependencies in both useMemo and useEffect:
+    > none: on every render
+    > []: for initial render
+    > [dependencies]: only if particular dependencies mutates
+
+# useEffect must not return anything besides a function, which is used for clean-up.

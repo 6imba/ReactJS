@@ -1,0 +1,12 @@
+- State allows React components to change their output over time in response to user actions, network responses, and anything else, without violating this rule.
+- Concept of state and lifecycle in a React component.
+    > state: value of variable a React component.
+
+- In Rendering Elements, we have only learned one way to update the UI. We call root.render() to change the rendered.
+- State is similar to props, but it is private and fully controlled by the component.
+
+# useState hook:
+    - Create react variable with initial state and method to change its state.
+    - Then pass that method into child class.
+
+# 

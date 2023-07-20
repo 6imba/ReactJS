@@ -1,0 +1,20 @@
+> The key difference between props and state is that:
+    - props are external and controlled by whatever renders/invokes the component while,
+    - state is internal and controlled by the component itself.
+
+    - Whereas Props can't (Immutable)
+    - State can be changed (Mutable)
+
+    - Props allow you to pass data from one component to other components as an argument.
+    - State holds information about the component.
+
+    - Props can be accessed by the child component.
+    - State cannot be accessed by child components.()
+
+    - Stateless component can have Props.
+    - Stateless components cannot have State.
+
+    - Props make components reusable.
+    - State makes components re-render when state changes.
+
+> 

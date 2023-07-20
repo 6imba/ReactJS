@@ -1,0 +1,23 @@
+# Conditional statement:
+    - if (condition_1){statement_1}else if(condition_2){statement_2}else if(condition_3){statement_3}else{}
+    - ternary operator ~ condition_1 ? 'statement_1' : 'statement_2')
+    - Switch Statement ~ 
+        switch(expression) {
+            case x:
+                // code block
+                break;
+            case y:
+                // code block
+                contineu;
+            default:
+                // code block
+        }
+
+# Condition:
+    - true or false
+
+# Condition:
+    - true
+    - false
+    - !true
+    - !false

@@ -1,0 +1,5 @@
+- UserInteraction => event => eventHandler => componentState
+
+- hooks should always be called inside function component, not even inside nested function inside function component.
+
+- 

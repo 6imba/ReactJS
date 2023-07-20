@@ -1,0 +1,2 @@
+Q. They serve the same purpose as JavaScript functions, but work in isolation?
+Q. 

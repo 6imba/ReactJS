@@ -1,0 +1,8 @@
+# interactive and scalable component driven user interfaces.
+
+# react module file content:
+    - React core syntax & JSX.
+    - Working with components.
+    - Working with data.
+
+# 

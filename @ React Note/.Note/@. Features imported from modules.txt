@@ -1,0 +1,9 @@
+# Features(class,object,property,methods,etc...) imported from modules(file) of downloaded third party library.
+    - import ReactDOM from 'react-dom/client';
+        ~ see in node modules folder:
+            - there is library called react-dom.
+                - and this library called react-dom has many javascript ES6_module and client.js is one of them.
+
+
+
+# 

@@ -1,0 +1,12 @@
+.content-container{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+.our-link{
+    color: rgb(43, 159, 217);
+  }
+.our-link:hover{
+    background-color: rgb(43, 159, 217);
+    color: white;
+}

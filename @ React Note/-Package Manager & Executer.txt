@@ -1,0 +1,86 @@
+- npm downloads and install packages in our project.
+- npx just run packages onces in our project.(not download/install)
+- npx create-react-app appName
+- create-react-app ==> utility to create a react app.
+    - npm create-react-app appName (incase you want to first download/install react_package and then create react app)
+    - npx create-react-app appName (incase you want to execute create react app once with no any installation)
+
+----------------------------------------------------------------------------------------------------------------------------
+
+- npm start
+    Starts the development server.
+  npm run build
+    Bundles the app into static files for production.
+  npm test
+    Starts the test runner.
+  npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+----------------------------------------------------------------------------------------------------------------------------
+
+# Packages:
+  1. Local Pakcages(In your Project: package.json, package-lock.json).
+  2. Global Packages(In your System: C:\Users\SimbA\AppData\Roaming\npm).
+
+  - Local Packages:
+    - installation: npm i express
+    - list: npm list
+    - uninstallation: npm uninstall express
+
+  - Global Packages:
+    - installation: npm i express -g
+    - list: npm list -g
+    - uninstallation: npm uninstall express -g
+
+  - View depth of packages:
+    - npm list -g
+    - npm list -g --depth 0
+    - npm list -g --depth 1
+    - npm list -g --depth 2
+    - npm list
+    - npm list --depth 0
+    - npm list --depth 1
+    - npm list --depth 2
+
+    # Dev dependencies && Production|Runtime dependencies.
+      1. Dev dependencies:
+        - installation: npm install nodemon --save-dev || - npm install nodemon -D
+        - uninstallation: npm uninstall nodemon --save-dev || - npm uninstall nodemon -D
+        > "devDependencies": {
+            "nodemon": "^2.0.16"
+          }
+
+      2. Runtime dependencies:
+        > "dependencies": {
+            "express": "^4.18.1"
+          },
+  -----------------------------------------------------------------------------------------------------------------------------------
+  
+  1. Global dependencies,
+  2. Local dependencies,
+  3. Dev dependencies(install it locally or gobally):
+  4. Runtime dependencies(install it locally or gobally):
+  5. npm:Manager(install,unistall,locally,globally) VS npm:Execute.
+  
+  -----------------------------------------------------------------------------------------------------------------------------------
+  
+  > npm init -y
+  > npm i express
+  > npm i nodemon -g
+  > npm i nodemon -D(devDependencies) || npm i nodemon -g(globally) || npm i nodemon(locally)
+  
+  -----------------------------------------------------------------------------------------------------------------------------------
+  
+  # React app naming convension:
+    - camelCase
+    - PascalCase
+    - snake_case
+    - kebab-case
+
+  -----------------------------------------------------------------------------------------------------------------------------------
+
+  Q. What is file, .cmd, .ps1?
+
+  # Package Manager: npm, yarn
+  # Package Execute: npx

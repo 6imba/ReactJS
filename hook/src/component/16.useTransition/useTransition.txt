@@ -1,0 +1,31 @@
+# If you app slow not responsive. Most of the user is gonna leave immediately.
+
+# Problem on older web-apps:
+    - sluggish: slow-moving or inactive
+    - non-responsive
+
+# Solution: React 18
+    - useTransition Hook
+    - useDeferredValue Hook
+
+# useTransition specifically made to speed up application and make them responsive.
+# useTransition hook allow use to make two different state changes at the same time but rank/priotize them in order how import are those state changing method.
+
+Q. So before how to use it? What we actually should know is that when to use it?
+
+    So, what's going on? 
+    The way react work is:
+    - when we make a state change(setInput,setList),
+    - react will try to combine together all the different state changes we make into one calculateNewValue.
+    - and then react is gonna make them all call at once before rendering.
+    - so in above example it gonna combine our setInput and setList.
+    - ans as our setList take long time to finish execution, our rendering is also blocked.
+    
+    So, instead what I would like to is that set setInput has a higher priority so that setList:expensive operation doesn't block the flow for setInput.
+    - that's what useTransition allow use to do
+    - useTransition hook allow use to make two different state changes at the same time but rank/priotize them in order how import are those state changing method.
+    - setInput(more_priority) && setList(rank_later)
+
+    # Finally, lets see how to use useTransition hook. 
+
+# see the 3.useTransition.js file.

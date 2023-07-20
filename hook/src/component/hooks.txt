@@ -1,0 +1,23 @@
+- hooks should always be called inside function component, not even inside nested function inside function component.
+
+*************************************************************************************************************************************************
+
+- useState:             maintain state value and re-render component if any of its state is mutates.
+- useRecuder:           we can access stateVariable and SetStateMethod outside component(as we don't have to pass stateVariable and stateMethod every time, as we needed to do while using useState) and make it easy to write logic on state variable.
+- useContext:           maintain global state for all of its child component.
+- useEffect:            executes callback after rendering JSX, if given dependencies mutates and cannot have return type.
+- useMemo:              executes callback before rendering JSX, if given dependencies mutates.
+- useRef:               allows you to persist values between renders, store a mutable value that does not cause a re-render when updated, access a DOM element directly, keep track of previous state values.
+- useCallback:          changes the memorized_callback only when one of its dependencies is changed.
+- useImperativeHandle:  is used to create custome_ref value. i.e {current: custome_value}
+- useLayoutEffect:      synchronous/blocking side-effect of dependencies.(useEffect is asynchronous/non-blocking side-effect of dependencies.)
+- useDebugValue:        makes debugging React app easy when using ReactDebuggingTool chrome extension.
+- useDeferredValue:     those value that changes most ofter instantly, are passed into useDebugValue hook, as it only changes those value when they are free(not busy/changing).
+- useTransition:        hook allow use to make different state changes at the same time but rank/priotize them in order how important are those state changing method.
+- useId:                useId is a hook for generating unique IDs that are stable across the server and client, while avoiding hydration mismatches.     
+
+*************************************************************************************************************************************************
+
+# Question:
+    - As our CustomeHook is also just a function as our other FunctionComponent or simply function. How does reack know which is CustomeComponent.
+    - input filed -> DOM -> screen paint relation?

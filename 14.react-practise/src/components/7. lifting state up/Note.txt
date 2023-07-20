@@ -1,0 +1,73 @@
+export default function Calculator(){
+    return(
+        <>
+            <TemperatureInput scale="c"/>
+            <TemperatureInput scale="f"/>
+        </>
+    )
+}
+
+function TemperatureInput(props){
+    const [temperature, setTemp] = useState("")
+    const handleInputTemp = (e) => {
+        setTemp(e.target.value)
+    }
+    return(
+        <fieldset>
+                <legend>Enter temperature in {scaleNames[props.scale]}:</legend>
+                <input value={temperature} onChange={handleInputTemp} />
+        </fieldset>
+    )
+}
+
+
+TO:
+
+export default function Calculator(){
+    const [temperature, setTemp] = useState("")
+    const handleInputTemp = (e) => {
+        setTemp(e.target.value)
+    }
+    return(
+        <>
+            <TemperatureInput scale="c" temperature={temperature} handleInputTemp={handleInputTemp}/>
+            <TemperatureInput scale="f" temperature={temperature} handleInputTemp={handleInputTemp}/>
+        </>
+    )
+}
+
+function TemperatureInput(props){
+    return(
+        <fieldset>
+                <legend>Enter temperature in {scaleNames[props.scale]}:</legend>
+                <input value={props.temperature} onChange={props.handleInputTemp} />
+        </fieldset>
+    )
+}
+
+“lifting state up”.
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+Does component share each other state?
+
+- value of input field is maintained in state.
+- so everytime new value is typed/entered, onChange event gets triggered,
+- and event handler function of onChange event changes the state of input field value,
+- which makes that element rerender with updated state value.
+
+
+- everytime state changes component re-rendered but also state value is saved.
+	- type in input field ==> onChange events gets triggered ==> change the component state value => component re-rendered ==> with the upadated state value.
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+# Lifting up state in react:
+    - In React, sharing state is accomplished by moving it up to the closest common ancestor of the components that need it. This is called “lifting state up”.
+
+# Instead of using an entire state management library like Redux or React Context, we can just lift the state up to the closest common ancestor and pass both the state variables the state values down as well as any callbacks to update that state.
+
+# https://www.freecodecamp.org/news/what-is-lifting-state-up-in-react/
+# https://www.geeksforgeeks.org/lifting-state-up-in-reactjs/

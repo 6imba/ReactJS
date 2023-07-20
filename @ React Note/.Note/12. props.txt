@@ -1,0 +1,2 @@
+- props is how we pass dynamic value to our component.
+- props in Component is JavScript_object that we pass from our parent component to child component.

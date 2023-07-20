@@ -1,0 +1,28 @@
+# If we need to write/add HTML into page via JS, we used to use DOM api inside <script> tag.
+    - but in React we have got JSX(JavaScript XML).
+
+# JSX syntax/code:
+    - HTML_script inside JavaScript.
+    - HTML_script inside React_component_function.
+        - write HTML_script inside React_component_function as a variable value or a return value.
+    - JavaScript XML.
+    - At the end, we can say that HTML is XML.
+    - as react code is excuted, component's JSX is transformed into browser friendly code.
+
+# You can say that JSX is the way/syntax you write HTML inside your React Component module file, which(jsx) later gets transformed into browser friendly code by reactJS.
+    > component function can only return one element.(so, all the html element must be inside a root parent node element.) i.e: return <div><h1>hi1</h1><h1>hi2</h1></div>
+    > () in component return will span the multiline code.
+    > Expression inside html tag: attributr_key = {varaible}.
+
+{["amir is ",23, " years old."]}
+// react is capable of rendering array item as string.
+
+- we can also store JSX_element in variable of function component.
+    - It's not limited to use JSX inside return() only.
+
+const ElementList_1 = () => {
+    const intArr = [2,3,4,5,6]
+    const elementArr = intArr.map(item => <li>{item}</li>) **********************************
+    return elementArr;
+}
+

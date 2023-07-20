@@ -1,0 +1,16 @@
+- useDebugValue makes debugging React app easy when using ReactDebuggingTool chrome extension.
+- useDebugValue hooks is used only inside custome hook.
+- useDebugValue show debugged value into browser tool, only to the component(UseDebugValue_1) level to the custome hook.
+- when you have multiple debugged value, ReactBrowserDebugger shows those value together inside an array.
+
+# Performance of React app with useDebugValue hook:
+    - As our useDebugValue get executed in production as its in out react-app-code .
+    > useDebugValue(callback): 2.debug takes time.js #1
+        - here callback might take long time to finish, which will make out react app wait and slow.
+    > useDebugValue(value, callback): 2.debug takes time.js #2
+        - So, instead we can pass two argument into useDebugValue hook. 
+        - Here, callback will run only if we are in development or when our developer tool is opened.
+
+# Question:
+    - As our CustomeHook is also just a function as our other FunctionComponent or simply function. How does reack know which is CustomeComponent.
+    - 

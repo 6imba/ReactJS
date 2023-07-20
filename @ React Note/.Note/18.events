@@ -1,0 +1,20 @@
+# Handling events with React elements is very similar to handling events on DOM elements.
+
+# There are some syntax differences, 
+    > React events are named using camelCase, rather than lowercase.
+        - <button onclick=""> ==> JS
+        - <button onClick={}> ==> JSX
+    > With JSX you pass a function as the event handler, rather than a string.
+        - <button onclick="eventHandlerFuntion()"> ==> JS
+        - <button onClick={eventHandlerFuntion}> ==> JSX
+    > you cannot return false to prevent default behavior in React. You must call preventDefault explicitly.
+        - <form onsubmit="console.log('You clicked submit.'); return false"> ==> JS
+        - <form onsubmit={(e)=>{e.preventDefault(); console.log('You clicked submit.');}}> ==> JSX
+
+# Some events_attribute in React:
+    - onClick
+    - onDoubleClick
+    - onChange
+    - onSubmit
+    - 
+

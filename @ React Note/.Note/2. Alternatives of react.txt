@@ -1,0 +1,10 @@
+# React is a client-side component-based JavaScript library to built dynamically reactive user interface for websites/single_page_web_application.
+    - Its component based UI library.
+    - It's mainly developed to focus in component thing.
+    - So it doesn't have other features built-in.
+    - But if you needs other features to work with react component you have to install third-party library/package owning those other features.
+    - like router for routing features, and so on.
+
+# Like react we have other alternatives like angular_framework, vue_framework.
+
+# React < Vue < Angular.

@@ -1,0 +1,27 @@
+- we have input filed id for label tag but in react form our input field is inside label tag.
+
+- WKT, input type="submit" has default behavior(refreshing the page) on browser.
+    -So, to prevent page from refreshing, you cannot return false to prevent default behavior in React like in html form.
+    - Instead, you must call built-in preventDefault method explicitly on event-handler funtion.
+        - <form onsubmit="console.log('You clicked submit.'); return false"> ==> JS
+        - <form onsubmit={(e)=>{e.preventDefault(); console.log('You clicked submit.');}}> ==> JSX
+
+- value of html form is writeable but value of react form is read-only field.
+    - So use defaultValue attribute/props instead of value:
+        > <input type="text" defaultValue="No name" placeholder="enter your name" name="username"/>
+        > <input type="text" value="No name" placeholder="enter your name" name="username"/>
+
+
+# Form handling:
+    - Handling forms is about how you handle the data when 1.value of any of its field changes or 2.form gets submitted.
+
+    - In HTML, form data is usually handled by the DOM.
+    - In React, form data is usually handled by the components.
+
+    - When the data is handled by the components, all the data is stored in the component state.
+    - and everytime field data changes, you have to chnage the state of that particular component too.
+        - You can control changes in input fields by adding event handlers attribute called onChange in the reapective input field.
+        - We can use the useState Hook to keep track of each inputs value and provide a "single source of truth" for the entire application.
+    
+    - 
+

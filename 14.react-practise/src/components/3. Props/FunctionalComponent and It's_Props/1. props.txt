@@ -1,0 +1,6 @@
+- props is how we pass data to our function component.
+    (as we pass data into function as parameter)
+
+- like parameter in function, props in function_component.
+- pass state of a component as a props to its child component.
+- 
